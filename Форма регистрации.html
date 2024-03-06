@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="stile1.css"/>
+<title>Форма регистрации</title>
+</head>
+<body>
+<h1 class="zg">Форма регистрации</h1>
+<form action="#" method="post" enctype="multipart/form-data">
+<div class="fm1">
+<h3>Придумай данные для входа</h3>
+<div>
+	<input class="vn" placeholder="Логин" type="text" name="username" value=""/>
+</div>
+<div>
+	<br/>
+	<input class="vn" placeholder="Пароль" type="password" name="userpass" value=""/>
+
+</div>
+	<br />
+</div>
+<div class="fm2">
+<h3>Ты девочка или мальчик?</h3>
+<div>
+	<p><input type="radio" name="sex" value="girl"/>девочка</p>
+	<p><input type="radio" name="sex" value="boy"/>мальчик</p>
+</div>
+</div>
+<div class="fm3">
+<h3>Сколько тебе лет?</h3>
+<div>
+	<input class="vn" placeholder="Возраст" type="tel" name="age" value=""/>
+	<br />
+</div>
+	<br />
+</div>
+<div class="fm4">
+<h3>Какой у тебя любимый цвет?</h3>
+<div>
+	<select name="color" class="vn">
+		<option name="red">Красный</option>
+		<option name="blue">Синий</option>
+		<option name="yellow">Жёлтый</option>
+		<option name="pink">Розовый</option>
+		<option name="orange">Оранжевый</option>
+		<option name="violet">Фиолетовый</option>
+	</select>
+</div>
+	<br />
+</div>
+<div class="fm5">
+<h3>Загрузи свою любимую картинку</h3>
+<div>
+	<input class="vn" type="file" name="foto"/>	
+</div>
+	<br />
+</div>
+<div class="fm6">
+<h3>Какие животные есть у тебя дома?</h3>
+<div>
+	<p><input type="checkbox" name="cat"/>Кошка</p>
+	<p><input type="checkbox" name="dog"/>Собака</p>
+	<p><input type="checkbox" name="bird"/>Птица</p>
+	<p><input type="checkbox" name="fish"/>Рыба</p>
+	<p><input type="checkbox" name="hamster"/>Хомяк</p>
+</div>
+</div>
+<div class="fm7">
+<h3>Расскажи о себе</h3>
+<div>
+	<textarea class="vn" name="about" cols="50" rows="10"></textarea>
+</div>
+	<br>
+</div>
+<div class="btd">
+	<br>
+	<button class="bt" type="submit">Отправить</button>
+	<button class="bt" type="reset">Очистить</button>
+</div>
+</form>
+</body>
+</html>

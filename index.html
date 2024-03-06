@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="stile2.css"/>
+<script src="script.js"></script>
+<title>Для самых маленьких</title>
+</head>
+<body>
+<div  class="reg">
+<button><a href="Форма регистрации.html" target="_blank">Зарегистрироваться</a></button>
+</div>
+<div class="sm">
+<button><a href="Сказка.html" target="_blank">Сказка</a></button>
+<button><a href="https://www.youtube.com/watch?v=ZdfZVnS8_Zs&" target="_blank">Мультик</a></button>
+</div>
+<div class="sm2">
+<h3>Хочешь посмотреть мультик?</h3>
+</div>
+<div class="sm3">
+<button onclick="openModal('modal1')">Да</button>
+<button onclick="openModal('modal2')">Нет</button>
+</div>
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal1')">&times;</span>
+    <p><div class="container">
+        <video id="videoPlayer" src="Песня Паровозика (из м_ф Паровозик из Ромашкова).mp4" controls></video>
+        <div>
+            <button class="button" onclick="playVideo()">Старт</button>
+            <button class="button" onclick="pauseVideo()">Стоп</button>
+        </div>
+    </div></p>
+  </div>
+</div>
+
+<div id="modal2" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal2')">&times;</span>
+    <p><p class="mtext">Тогда посмотри на котика :)</p>
+    	<p class="mtext"><img src="загружено.jpeg"/></p>
+    </p>
+  </div>
+</div>
+</body>
+</html>
